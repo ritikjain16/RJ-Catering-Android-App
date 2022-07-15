@@ -137,8 +137,7 @@ public class OrderDetailsActivity extends AppCompatActivity implements PaymentRe
 
     private void razorPay(String sAmount) {
         Checkout checkout = new Checkout();
-//        checkout.setKeyID("rzp_test_ZJwDV0eD9lLlNR");
-        checkout.setKeyID("rzp_live_FbAUlsHyZnkcId");
+//        checkout.setKeyID("test_id");
         checkout.setImage(R.drawable.rj_catering_logo);
 
         int amount = Math.round(Float.parseFloat(sAmount) * 100);

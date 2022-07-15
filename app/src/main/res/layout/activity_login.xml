@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color_gradient"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        app:cardElevation="20dp"
+        android:background="@color/bgColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:fontFamily="@font/adamina"
+                android:background="#70ffffff"
+                android:textColor="@color/textColor"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:hint="Enter your mobile number"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/myColor"
+                android:text="Send OTP"
+                android:fontFamily="@font/cinzel_decorative"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/enter_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:visibility="gone"
+                android:background="#70ffffff"
+                android:maxLength="6"
+                android:fontFamily="@font/adamina"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/textColor"
+                android:hint="Enter OTP"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/myColor"
+                android:text="Verify"
+                android:fontFamily="@font/cinzel_decorative"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:fontFamily="@font/adamina"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="10dp"
+        android:text="Terms &amp; Conditions apply"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:text="Resend OTP"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_login"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

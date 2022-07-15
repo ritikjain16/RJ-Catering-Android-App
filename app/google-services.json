@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673431627564",
+    "project_id": "rj-catering",
+    "storage_bucket": "rj-catering.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673431627564:android:673c3af706d765d4222e89",
+        "android_client_info": {
+          "package_name": "com.ritik.rjcatering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673431627564-9kga7tlok97gbnjfk8s5tgc4u5iv4qvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv5brEbCoWHnyRltWR064HX3_dDGrvbwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673431627564-9kga7tlok97gbnjfk8s5tgc4u5iv4qvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
